@@ -1,0 +1,96 @@
+/* --- NOTES HUB SPECIAL CLASSES --- */
+
+/* 2-Column Split Container */
+.notes-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .notes-layout {
+    flex-direction: row;
+  }
+}
+
+/* Left Sidebar Topics List */
+.topics-sidebar {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid rgba(243, 244, 246, 0.8);
+}
+
+@media (min-width: 768px) {
+  .topics-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+  }
+}
+
+.topic-item {
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-gray);
+  margin-bottom: 4px;
+  transition: all 0.2s;
+}
+
+.topic-item:hover {
+  background: #f9fafb;
+  color: var(--text-dark);
+}
+
+.topic-item.active {
+  background: var(--brand-light-purple);
+  color: var(--brand-purple);
+  font-weight: 600;
+}
+
+/* Right Content Canvas Reading Pane */
+.notes-display-pane {
+  flex-grow: 1;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  border: 1px solid rgba(243, 244, 246, 0.8);
+}
+
+/* Template Card Box Components */
+.template-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.template-card {
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(243, 244, 246, 1);
+}
+
+.template-card h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+/* Individual Templates Variant Styles */
+.tpl-definition { border-left: 4px solid #3b82f6; background: #f0f6ff; }
+.tpl-definition h4 { color: #2563eb; }
+
+.tpl-syntax { border-left: 4px solid #6b7280; background: #f9fafb; font-family: monospace; }
+.tpl-syntax h4 { color: #4b5563; }
+
+.tpl-example { border-left: 4px solid #10b981; background: #f0fdf4; }
+.tpl-example h4 { color: #059669; }
+
+.tpl-mistake { border-left: 4px solid #ef4444; background: #fef2f2; }
+.tpl-mistake h4 { color: #dc2626; }
