@@ -4,7 +4,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import MainLayout from './components/MainLayout';
 import DashboardPage from './pages/DashboardPage';
 import NotesPage from './pages/NotesPage';
-import DsaPage from './pages/DsaPage';
+import DsaPage from './pages/DSAPage';
 import RoadmapPage from './pages/RoadmapPage';
 import RevisionPage from './pages/RevisionPage';
 import MistakesPage from './pages/MistakesPage';
